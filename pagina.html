@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="header">
+    <h1>Mi Página Web</h1>
+    <p>Ejemplo de estructura HTML: encabezado, foto, contenido y pie de página</p>
+  </header>
+
+  <!-- Sección de imagen -->
+  <section class="imagen-seccion">
+    <div class="icono-html">📄</div>
+    <p class="pie-imagen">Ícono 3D de un archivo HTML</p>
+  </section>
+
+  <!-- Contenido principal -->
+  <main class="contenido">
+    <div class="tarjeta">
+      <h2>Contenido principal</h2>
+      <p>Este es el bloque de contenido de la página. Aquí puedes escribir el texto principal, explicaciones, artículos o cualquier información que quieras mostrar al usuario.</p>
+      <p>La etiqueta <code>&lt;main&gt;</code> se utiliza para agrupar el contenido central y único de un documento HTML, diferenciándolo del encabezado, el menú y el pie de página.</p>
+    </div>
+
+    <!-- Sección de eventos -->
+    <section class="eventos" id="eventos">
+      <h2 class="eventos-titulo">Próximos eventos</h2>
+
+      <div class="filtros" role="group" aria-label="Filtrar eventos por categoría">
+        <button class="filtro activo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="academico">Académico</button>
+        <button class="filtro" data-filtro="cultural">Cultural</button>
+        <button class="filtro" data-filtro="deportivo">Deportivo</button>
+      </div>
+
+      <div class="eventos-grid">
+
+        <article class="evento" data-categoria="academico">
+          <div class="evento-fecha"><span class="dia">15</span><span class="mes">Oct</span></div>
+          <div class="evento-info">
+            <span class="etiqueta academico">Académico</span>
+            <h3>Feria de Ciencia y Tecnología</h3>
+            <p class="meta">🕘 9:00 a. m. &nbsp;·&nbsp; 📍 Auditorio principal</p>
+            <p class="detalle" hidden>Exposición de proyectos de investigación e innovación realizados por los estudiantes, con demostraciones en vivo y jurado invitado.</p>
+            <button class="btn-detalle" aria-expanded="false">Ver más</button>
+          </div>
+        </article>
+
+        <article class="evento" data-categoria="cultural">
+          <div class="evento-fecha"><span class="dia">22</span><span class="mes">Oct</span></div>
+          <div class="evento-info">
+            <span class="etiqueta cultural">Cultural</span>
+            <h3>Noche de Música y Talento</h3>
+            <p class="meta">🕖 7:00 p. m. &nbsp;·&nbsp; 📍 Plazoleta central</p>
+            <p class="detalle" hidden>Presentaciones de música, baile y poesía a cargo de la comunidad universitaria. Entrada libre hasta completar el aforo.</p>
+            <button class="btn-detalle" aria-expanded="false">Ver más</button>
+          </div>
+        </article>
+
+        <article class="evento" data-categoria="deportivo">
+          <div class="evento-fecha"><span class="dia">29</span><span class="mes">Oct</span></div>
+          <div class="evento-info">
+            <span class="etiqueta deportivo">Deportivo</span>
+            <h3>Torneo Interfacultades de Fútbol</h3>
+            <p class="meta">🕙 10:00 a. m. &nbsp;·&nbsp; 📍 Canchas deportivas</p>
+            <p class="detalle" hidden>Competencia amistosa entre facultades. Inscripciones abiertas por equipos; habrá premiación para los tres primeros lugares.</p>
+            <button class="btn-detalle" aria-expanded="false">Ver más</button>
+          </div>
+        </article>
+
+        <article class="evento" data-categoria="academico">
+          <div class="evento-fecha"><span class="dia">05</span><span class="mes">Nov</span></div>
+          <div class="evento-info">
+            <span class="etiqueta academico">Académico</span>
+            <h3>Taller de Programación Web</h3>
+            <p class="meta">🕑 2:00 p. m. &nbsp;·&nbsp; 📍 Sala de cómputo 3</p>
+            <p class="detalle" hidden>Taller práctico de HTML, CSS y JavaScript para construir una página desde cero. Cupos limitados; traer portátil.</p>
+            <button class="btn-detalle" aria-expanded="false">Ver más</button>
+          </div>
+        </article>
+
+        <article class="evento" data-categoria="cultural">
+          <div class="evento-fecha"><span class="dia">12</span><span class="mes">Nov</span></div>
+          <div class="evento-info">
+            <span class="etiqueta cultural">Cultural</span>
+            <h3>Cine Foro Universitario</h3>
+            <p class="meta">🕕 6:00 p. m. &nbsp;·&nbsp; 📍 Sala audiovisual</p>
+            <p class="detalle" hidden>Proyección de un documental seguida de una charla abierta con invitados y espacio para preguntas del público.</p>
+            <button class="btn-detalle" aria-expanded="false">Ver más</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>&copy; 2026 Mi Página Web. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
